@@ -17,10 +17,15 @@
                     </tr>
                 {% endfor %}
        
-        <p>
-            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
-        </p>
+               
     {% else %}
         <p>Nie dodano żadnego artykułu</p>
     {% endif %}
+
+    <div class="backtomain">
+        <a href="{% url 'main' %}"> Powrót do strony głównej </a>
+    </div>  
 {% endblock content %}
+
+
+

@@ -28,17 +28,10 @@ margin:auto;
 background: #d5dddd;
 box-shadow: 0 0 5px grey;
 
-/* position: sticky;
-  top: 0; */
 }
 
-.nav-bar img {
-margin-left: 1opx;
-width: 95px;
-height: 85px;
-border: 0;
-border-radius: 10px;
-}
+
+
 
 .nav-bar a {
 text-decoration: none;
@@ -46,19 +39,30 @@ margin: 2px 10  px;
 color: #013287;
 font-size: 25px;
 font-weight: normal;
+
 }
 
-.nav-bar a:hover {
-color: #31d8ba;
-text-shadow: 0 0 1px blue;
-}
+
 
 .menu {
-list-style: none;
-display: flex;
-overflow: hidden;
-align-self: center
+ 
+  display: flex;
+  align-items: center;
+ 
 }
+.menu li{
+  flex-wrap:wrap; 
+}
+
+
+
+.nav-bar .menu li {
+  margin: 1px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
 
 
 
@@ -123,6 +127,30 @@ p a {
 text-decoration: none;
 }
 
+.backtomain{
+  
+ 
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.backtomain a{
+  text-decoration: none;
+  font-size: 23px;
+  
+  
+}
+
+.bigtext {
+  text-align: center;
+  margin: auto;
+  font-size: 50px;
+  font-weight: 700;
+  
+}
+
 .table-wrapper{
   margin: 10px 70px 70px;
   box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
@@ -170,9 +198,10 @@ text-decoration: none;
   height: auto;
 }
 
+
 .button-19 {
   appearance: button;
-  background-color: #020204;
+  background-color: #faa03a;
   border:  1mm ridge rgba(217, 200, 200, 0.9);
   border-radius: 20px;
   border-width: 1 1 1px;
@@ -198,7 +227,35 @@ text-decoration: none;
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  width: 100%;
+  width:100%;
+  max-width: 600px;
+  text-decoration: none;
+  
+ 
+}
+
+.btn-group button {
+  appearance: button;
+  background-color: #ff933b;
+  
+  border:  1mm ridge rgba(217, 200, 200, 0.9);
+  border-radius: 20px;
+  border-width: 1 1 1px;
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 50%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  margin: auto;
+  text-decoration: none;
+  
+  
+}
+.btn-group button a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .button-19:after {
@@ -227,6 +284,18 @@ text-decoration: none;
 
 .button-19:disabled {
   cursor: auto;
+}
+.button-18 {
+  appearance: button;
+  background-color: #9696fa;
+  border:  1mm ridge rgba(217, 200, 200, 0.9);
+  border-radius: 20px;
+  border-width: 1 1 1px;
+ padding: 5px;
+  color: #fc5151;
+  cursor:grab;
+  box-sizing: border-box;
+  
 }
 /* -----------------------------------------------CARD */
 .container{
@@ -265,3 +334,5 @@ margin-left:calc(-.5 * var(--bs-gutter-x))}
 .card-text:last-child{margin-bottom:0}
 
 .btn-primary{color:rgb(1, 0, 0);background-color:#0d6efd;border-color:#0d6efd}
+
+

@@ -5,10 +5,21 @@
 {% endblock action%}
 
 {% block content %}
-<p>
-    <a href="{% url 'main' %}"> Powrót do strony głównej</a>
-</p>
+
+<div class="backtomain">
+    <a href="{% url 'main' %}"> Powrót do strony głównej </a>
+</div>
+
+
+
 <section>
+    <br><br><br>
+   
+    <div class="bigtext">
+        <a> TOP 100 Kryptowalut pod względem kapitalizacji </a>
+    </div>
+   
+    <br>
    <div class="table-wrapper">
     <table class="fl-table">
         <thead>
@@ -38,4 +49,9 @@
 
 </div>
 </section>
+
+<div class="backtomain">
+    <a href="{% url 'main' %}"> Powrót do strony głównej </a>
+</div>
+<br>
 {% endblock content %}

@@ -26,33 +26,9 @@
 </head>
 
 
-
-<body>
     
   
     <div class="main">
-
-        <div class="nav-bar">
-        
-            {% load static %} <a href="./index.html"> <img src="{% static '/img/logos.png'    %}" alt="logo" /> </a>
-            
-           
-           
-            <ul class="menu">
-                <li><a href="{% url 'index' %}" class="button-19">HOME</a></li>
-                <li><a href="{% url 'cryptocurrencies' %}" class="button-19" >Ranking Kryptowalut</a></li>
-                <li><a href="{% url 'basic' %}" class="button-19"> Podstawowa wiedza</a></li>
-                <li><a href="{% url 'dict' %}" class="button-19"> Słownik pojęć</a></li>
-                <li><a href="{% url 'tutorial' %}" class="button-19"> Poradniki</a></li>
-                <li><a href="{% url 'news' %}" class="button-19"> News</a></li>
-            
-                <li><a href="https://www.survio.com/survey/d/H2Q8X5N7V7V7W6E3R" class="button-19"> Ankieta</a></li>
-            </ul>
-    
-           
-    
-        </div>
-        
         <div id="slider" class="image-slider">
 
             
@@ -61,17 +37,32 @@
             
             
         </div>
+
+ <br>
+ <br>
+ <div class="btn-group button">
+    
+    <button><a href="{% url 'cryptocurrencies' %}"  >Ranking Kryptowalut</a></button>
+    <button><a href="{% url 'basic' %}" > Podstawowa wiedza</a></button>
+    <button><a href="{% url 'dict' %}" > Słownik pojęć</a></button>
+    <button><a href="{% url 'tutorial' %}" > Poradniki</a></button>
+    <button><a href="{% url 'news' %}" > News</a></button>
+ 
+
+    <button><a href="https://www.survio.com/survey/d/H2Q8X5N7V7V7W6E3R" > Ankieta :) </a></button>
+
+
+  </div>
+       
+            
+         
+         
         <div class="tag-line">
-            <p><a href="{% url 'basic' %}" >Dowiedz się jak zacząć swoją przygodę z technologią blockchain</a></p>
+            <p><h2>TOP 10 kryptowalut pod wzgędem kapitalizacji</h2></p>
             <br>
                
         </div>
-        <a href="{% url 'basic' %}" class="button-19"> Podstawowa wiedza</a><br>
-               <a href="{% url 'dict' %}" class="button-19"> Słownik pojęć</a>
-               <a href="{% url 'tutorial' %}" class="button-19"> Poradniki</a>
-        <h2>TOP 10 kryptowalut pod wzgędem kapitalizacji</h2>
-
-        
+    
         
         
 <div class="table-wrapper">
@@ -103,7 +94,9 @@
 
 </div>
 
-<h2>Najnowsze newsy ze świata crypto</h2>
+<div class="bigtext">
+    <a> Najnowsze newsy ze świata krypto </a>
+</div>
 <hr>
 
 <div class = "container2" >
@@ -130,7 +123,21 @@
             
     
 
-     
+<div class="tag-line">
+    <p>Strony które mogą się przydać, aby jeszcze głębiej wejść w świat crypto i technologii blockchain
+   
+  
+    <br>
+    <br>
+    <button><a href="https://bithub.pl/" class="button-19" >BitHub.pl</a></button>
+    <button><a href="https://cryps.pl/crypto-101/"  class="button-19">Cryps.pl</a></button>
+    <button><a href="https://bitcoin.pl/" class="button-19" >Bitcoin.pl</a></button>
+    <button><a href="https://academy.binance.com/pl" class="button-19" >Binance Academy</a></button>
+    
+
+    <br>
+       </p>
+</div>  
           
     <div class="footer">
         <p> Krzysztof Spałek, Warszwa | Copyright &copy; <a href="#">s21825</a> 2022</p>
