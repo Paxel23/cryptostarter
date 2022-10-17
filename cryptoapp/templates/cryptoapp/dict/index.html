@@ -17,9 +17,9 @@
                     </tr>
                 {% endfor %}
      
-        <p>
-            <a href="{% url 'main' %}"> Powrót do strony głównej</a>
-        </p>
+                <div class="backtomain">
+                    <a href="{% url 'main' %}"> Powrót do strony głównej </a>
+                </div>
     {% else %}
         <p>Nie dodano żadnego słownika</p>
     {% endif %}
