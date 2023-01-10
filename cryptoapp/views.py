@@ -62,6 +62,11 @@ def dicts_szczegoly(request, dict_id):
     dict = get_object_or_404(Dict, pk=dict_id)
     return render(request, 'cryptoapp/dict/details.html', locals())
 
+def tutorials(request):
+    all_tutorials = Tutorial.objects.all()
+    return render(request, 'cryptoapp/tutorial/index.html',
+                {'action': 'Lista tutoriali', 'all_tutorials': all_tutorials})   
+
 def tutorials_szczegoly(request, tutorial_id):
     action = 'Tutorial o ID = ' + str(tutorial_id)
     tutorial = get_object_or_404(Tutorial, pk=tutorial_id)

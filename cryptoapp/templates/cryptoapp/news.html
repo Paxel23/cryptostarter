@@ -1,11 +1,11 @@
 {% extends 'cryptoapp/base2.html' %}
 
-
 {% block title %}
 CryptoStart
 {% endblock title %}
 
 {% block content %}
+
 
 <p>
     <a href="{% url 'main' %}"> Powrót do strony głównej</a>
@@ -23,7 +23,7 @@ CryptoStart
                         <a href="{{x.url}}" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
-                <br>
+                <br>    
             </div>    
         {% endfor %}
     </div>
